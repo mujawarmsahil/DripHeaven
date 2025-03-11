@@ -15,6 +15,11 @@ export default function Navbar() {
             source : ""
         },
         {
+            blackSource : ProductBlack,
+            whiteSource : ProductWhite,
+            source : "product"
+        },
+        {
             blackSource : InfoBlack,
             whiteSource : InfoWhite,
             source : "about"
@@ -24,11 +29,6 @@ export default function Navbar() {
             whiteSource : PhoneWhite,
             source : "contact"
         },
-        {
-            blackSource : ProductBlack,
-            whiteSource : ProductWhite,
-            source : "product"
-        }
     ]
     return (
         <nav className="fixed top-[10%] h-[80vh] w-[60px] shadow-[0px_0px_10px_3px_rgba(0,0,0,0.2)] left-[5%] rounded-[15px] p-2 z-10">
