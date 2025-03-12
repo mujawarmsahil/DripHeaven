@@ -18,7 +18,7 @@ export default function ReviewCard({review,swap}){
             <div className={`${swap ? 'order-2 border-r  border-r-gray-400 ' : 'order-1 border-l  border-l-gray-400'} w-[75%] text-black text-[20px] p-5 border-b border-b-gray-400`}>
                 <h3 
                     className="text-[24px] font-bold">
-                    {review.title}
+                    - {review.title}
                 </h3>
                 <p
                     className="text-[16px] text-gray-400 text-justify" >
@@ -26,7 +26,7 @@ export default function ReviewCard({review,swap}){
                 </p>
                 <button 
                     type="button"
-                    className={`mt-5 border-[1px] border-black p-1 rounded ${isHovered ? "bg-[rgba(0,0,0,0.9)]" : "bg-transparent"} transition-all duration-75`}>
+                    className={`mt-5 border-[1px]  p-2 rounded ${isHovered ? "" : ""} transition-all duration-75 bg-[rgba(0,0,0,0.8)]`}>
                     <a  
                         href={`https://${review.link}`}
                         target="_blank"
@@ -35,10 +35,11 @@ export default function ReviewCard({review,swap}){
                         onMouseOver={()=>setIsHovered(true)}
                         onMouseLeave={()=>setIsHovered(false)}>
                         <img 
-                            src={!isHovered ? InstagramGrayscale : InstagramColored} 
+                            src={!isHovered ? InstagramGrayscale : InstagramColored}
+                            className="w-[20px] h-[20px]" 
                             alt="" />
                         <p
-                            className={`font-bold ${!isHovered ? "" : "text-white"} text-[14px] text-center`}>
+                            className={`font-bold text-white text-[14px] text-center`}>
                                 {review.name}
                         </p>
                     </a>

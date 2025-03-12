@@ -4,7 +4,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        custom: ["'Monoton'", "sans-serif"],
+        rock : ["'Rock Salt'", "cursive"],
+      },
+    },
   },
   plugins: [],
 };

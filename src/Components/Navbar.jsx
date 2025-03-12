@@ -31,7 +31,7 @@ export default function Navbar() {
         },
     ]
     return (
-        <nav className="fixed top-[10%] h-[80vh] w-[60px] shadow-[0px_0px_10px_3px_rgba(0,0,0,0.2)] left-[5%] rounded-[15px] p-2 z-10">
+        <nav className="fixed top-[10%] h-[80vh] w-[60px] shadow-[0px_0px_10px_3px_rgba(0,0,0,0.2)] left-[5%] rounded-[15px] p-2 z-10 bg-[rgba(255,255,255,0.7)]">
             <ul className="flex flex-col justify-evenly h-full items-center w-full gap-4">
                 {
                     navDetails.map((navDetail, index) => (

@@ -10,7 +10,7 @@ export default function FooterList({footer}){
             </h2>
             <ul>
                 {
-                    footer.links.map((link)=><li className="my-2"><p className="text-black font-semibold cursor-pointer  inline hover:text-gray-400">{link}</p></li>)
+                    footer.links.map((link,index)=><li className="my-2" key={index}><p className="text-black font-semibold cursor-pointer  inline hover:text-gray-400">{link}</p></li>)
                 }
             </ul>
         </div>
